@@ -31,7 +31,7 @@ Cách đặt tag ảnh trên bản CVAT này: dùng công cụ Tag ở thanh bê
 | A07 | lane L1 | vẽ thêm / không vẽ | Không vẽ | Bên trái là dải bê tông, không có vạch sơn. Chờ coach xác nhận |
 | A09, A14 | lane R1 | vẽ thêm / không vẽ | [Không vẽ  | `lint` vẫn báo thiếu R1; vạch bên phải ở hai ảnh này mờ hoặc nghiêng, cần xem lại và xác nhận với coach |
 | A03 | lane occluded | bật occluded / không | không | Checkpoint nói A03 có đoạn vạch nối qua chỗ che; file hiện chưa có hình nào bật occluded |
-
+| A08 | lane R1 (vạch trắng bên trái, từ (40,357) đến (482,281)) | Nối thành một polyline hay giữ hai polyline |(một solid, một dashed) | Giữ hai polyline: một solid, một dashed | Giữa nét liền và nét đứt có một khoảng trống nên không nối liền được. Hai đoạn là hai loại vạch khác nhau (`style` solid và dashed), mà guideline không có giá trị "nửa liền nửa đứt" cho `style` nên mỗi đoạn giữ đúng một giá trị.|
 ## 4. Phiếu QC 1 nhận được
 Bạn kiểm lô của tôi: Nguyễn Ngọc Đồng Quyết định nhận được: Rework
 | Mã lỗi | Số lỗi | Đồng ý? | Đã sửa? |
